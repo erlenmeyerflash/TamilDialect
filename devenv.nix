@@ -10,6 +10,10 @@
     version = "3.11";
     venv.enable = true;
     venv.requirements = ''
+      openai-whisper
+      yt-dlp
+      nltk
+
       transformers
       datasets
       torch
