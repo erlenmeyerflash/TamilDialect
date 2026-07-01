@@ -4,8 +4,9 @@ from nltk import tokenize
 
 def tamToEng(string):
 
+    # Distinguishes retroflex n and l, as well as alveolar trill from tap
     uyir = {"அ" : "a", "ஆ" : "aa",  "இ" : "i", "ஈ" : "ee", "உ" : "u", "ஊ" : "oo", "எ" : "e", "ஏ" : "E", "ஐ" : "ai", "ஒ" : "o", "ஓ" : "o", "ஔ" : "au"}
-    mei = {"க" : ["ga", "ka"], "ங" : ["nga"], "ச" : ["sa", "cha"], "ஞ" : ["nya"], "ட" : ["da", "ta"], "ண" : ["Na"], "த" : ["dha", "tha"], "ந" : ["na"], "ப" : ["ba", "pa"], "ம" : ["ma"], "ய" : ["ya"], "ல" : ["la"], "ர" : ["ra"], "வ" : ["va"], "ழ" : ["zha"], "ள" : ["La"], "ற" : ["ra", "tra"], "ன" : ["na"], "ஷ" : ["sha"], "ஸ" : ["sa"], "ஹ" : ["ha"], "ஜ" : ["ja"]}
+    mei = {"க" : ["ga", "ka"], "ங" : ["nga"], "ச" : ["sa", "cha"], "ஞ" : ["nya"], "ட" : ["da", "ta"], "ண" : ["Na"], "த" : ["dha", "tha"], "ந" : ["na"], "ப" : ["ba", "pa"], "ம" : ["ma"], "ய" : ["ya"], "ல" : ["la"], "ர" : ["ra"], "வ" : ["va"], "ழ" : ["zha"], "ள" : ["La"], "ற" : ["Ra", "tra"], "ன" : ["na"], "ஷ" : ["sha"], "ஸ" : ["sa"], "ஹ" : ["ha"], "ஜ" : ["ja"]}
     marks = {"ா" : "aa", "ி" : "i", "ீ" : "ee", "ு" : "u", "ூ" : "oo", "ெ" : "e", "ே" : "E", "ை" : "ai", "ொ" : "o", "ோ" : "o", "ௌ" : "au"}
     pulli = "்" 
 
