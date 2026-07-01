@@ -131,6 +131,7 @@ def nrVariants(text):
     
     return changed if changed else None
 
+# One problem is that not all words with "tr" will be changed this way, should this variation be handled with a word-level dictionary?
 def tr_tt(text):
     # patri vs patti
     changed = text.replace("tr", "thth")
